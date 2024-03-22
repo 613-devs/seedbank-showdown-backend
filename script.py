@@ -4,7 +4,7 @@ import requests
 import json
 from flask_cors import CORS
 url = "http://localhost:1337/strains?populate=*"
-bearer_token = "a7afa94895905900d62ce7014bf5aca7c452d21e61c6222488b69e9f33819011b991b4e621b77caea7596f56635a83c7a365448a95b649153e854f4cb3420a7f92b45c15e94a4fd81faa492735f696691b2962b0b8df0d962dc694aad320630da912fc67365a64f4b2224315359205be366bda0503d5747deabe19f9a600fb29"
+bearer_token = "80de01c16612c057becd474e3a2b0cda498578049c3ef2d9d90b59766b2755995661488eef5067c62eb7520545a33dc53d67c959b453a8ea17618793e36b3afbfead110b3fa4095d002d033ad1661ad1d187fad9833c30537471aacd9917a8ebed2ef30d6f63a04474b76a87f32184c1611dc2f52f399a712e8c1774c06e59eb"
 
 def authenticate_api_bearer_token(url, bearer_token):
     headers = {'Authorization': f'Bearer {bearer_token}'}
