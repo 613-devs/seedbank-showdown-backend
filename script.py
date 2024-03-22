@@ -3,7 +3,7 @@ import time
 import requests
 import json
 from flask_cors import CORS
-url = "http://146.190.151.127:1337/api/strains?populate=*"
+url = "http://localhost:1337/strains?populate=*"
 bearer_token = "a7afa94895905900d62ce7014bf5aca7c452d21e61c6222488b69e9f33819011b991b4e621b77caea7596f56635a83c7a365448a95b649153e854f4cb3420a7f92b45c15e94a4fd81faa492735f696691b2962b0b8df0d962dc694aad320630da912fc67365a64f4b2224315359205be366bda0503d5747deabe19f9a600fb29"
 
 def authenticate_api_bearer_token(url, bearer_token):
