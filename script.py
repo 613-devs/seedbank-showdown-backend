@@ -3,7 +3,7 @@ import time
 import requests
 import json
 from flask_cors import CORS
-url = "http://localhost:1337/strains?populate=*"
+url = "http://localhost:1337/api/strains?populate=*"
 bearer_token = "80de01c16612c057becd474e3a2b0cda498578049c3ef2d9d90b59766b2755995661488eef5067c62eb7520545a33dc53d67c959b453a8ea17618793e36b3afbfead110b3fa4095d002d033ad1661ad1d187fad9833c30537471aacd9917a8ebed2ef30d6f63a04474b76a87f32184c1611dc2f52f399a712e8c1774c06e59eb"
 
 def authenticate_api_bearer_token(url, bearer_token):
@@ -253,7 +253,7 @@ def fetch_and_process_data(url, bearer_token, weights):
         print(f"Error fetching data: {response.status_code}")
         return None
     
-expected_bearer_token = "6e5O5ZwgTC9CRRdzTc2CEYsxfnDDohQI4au31KUzCNmxPUWC2Q"
+expected_bearer_token = "1234567"
 @app.route('/')
 def data():
   # Check if Authorization header is present
